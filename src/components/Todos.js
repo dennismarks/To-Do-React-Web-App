@@ -11,7 +11,7 @@ class Todos extends Component {
 	}
 }
 
-// PropTypes
+// PropTypes - validation for props that a comp should have
 Todos.propTypes = {
 	todos: PropTypes.array.isRequired
 }
