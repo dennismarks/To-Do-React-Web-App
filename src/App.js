@@ -1,6 +1,5 @@
-import React, {
-	Component
-} from 'react';
+import React, { Component } from 'react';
+import Header from './components/Header';
 import './App.css';
 import Todos from './components/Todos';
 
@@ -43,7 +42,11 @@ class App extends Component {
 		console.log(this.state.todos)
 		return (
 		  <div className="App">
-			<Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
+			<Header />
+			<Todos 
+				todos={this.state.todos} 
+				markComplete={this.markComplete} 
+				delTodo={this.delTodo}/>
 		  </div>
 		);
 	  }
